@@ -9,35 +9,21 @@ function showDashboard() {
     // Replace with actual implementation or embed code
 }
 
-// Email Sending Functionality
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Popup Functionality
+function showPopup(title, description) {
+    document.getElementById('popup-title').textContent = title;
+    document.getElementById('popup-description').textContent = description;
+    document.getElementById('popup').style.display = 'flex';
+}
 
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
 
-    fetch('https://example.com/send-email', { // Replace with your server URL
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name: name,
-            email: email,
-            message: message
-        }),
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Message sent successfully!');
-        } else {
-            alert('Failed to send message.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to send message.');
+// Adding Event Listeners to Skills and Achievements
+document.querySelectorAll('.skill, .achievement').forEach(item => {
+    item.addEventListener('click', function() {
+        const title = this.querySelector('span').textContent;
+        showPopup(title, `More information about ${title}.`);
     });
 });
