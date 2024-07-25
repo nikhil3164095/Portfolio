@@ -10,12 +10,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
 header {
     background-color: #1a1a1a;
     color: white;
@@ -47,11 +41,6 @@ nav a:hover {
     color: #00bfa5;
 }
 
-#theme-toggle {
-    margin-left: auto;
-    cursor: pointer;
-}
-
 /* Section Styles */
 section {
     padding: 6rem 0;
@@ -67,7 +56,7 @@ section h2 {
 #home {
     text-align: center;
     padding: 10rem 1rem 6rem 1rem;
-    background: url('your-image.jpg') center/cover no-repeat;
+    background: url('home-background.jpg') center/cover no-repeat;
     color: white;
     position: relative;
     z-index: 1;
@@ -149,7 +138,7 @@ section h2 {
     border: none;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
@@ -160,16 +149,52 @@ section h2 {
 }
 
 /* Skills & Achievements Section Styles */
-.list-hover li {
-    transition: transform 0.3s, color 0.3s;
+.skills-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.list-hover li:hover {
+.skill, .achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.skill:hover, .achievement:hover {
     transform: scale(1.05);
     color: #00bfa5;
 }
 
+.skill i, .achievement i {
+    font-size: 1.5rem;
+}
+
 /* Contact Section Styles */
+#contact .contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+#contact .contact-info a {
+    color: #00bfa5;
+    text-decoration: none;
+}
+
+#contact .contact-info a:hover {
+    text-decoration: underline;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -198,7 +223,7 @@ form button {
     background: #00bfa5;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
