@@ -15,8 +15,10 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="Nikhil_Resume.pdf" download>Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +50,6 @@
                 <p>Brief description of the project. Explain what the project is about, the technologies used, and the impact or results achieved.</p>
                 <button class="btn" onclick="showDashboard()">View Demo</button>
             </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
     
@@ -56,31 +57,54 @@
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-achievements">
-                <div class="skill">
+                <div class="skill" onclick="showPopup('Python', 'More information about Python.')">
                     <i class="fas fa-code"></i>
                     <span>Python</span>
                 </div>
-                <div class="skill">
+                <div class="skill" onclick="showPopup('Data Analysis', 'More information about Data Analysis.')">
                     <i class="fas fa-database"></i>
                     <span>Data Analysis</span>
                 </div>
-                <div class="skill">
+                <div class="skill" onclick="showPopup('Project Management', 'More information about Project Management.')">
                     <i class="fas fa-project-diagram"></i>
                     <span>Project Management</span>
                 </div>
-                <div class="skill">
+                <div class="skill" onclick="showPopup('Machine Learning', 'More information about Machine Learning.')">
                     <i class="fas fa-robot"></i>
                     <span>Machine Learning</span>
                 </div>
-                <div class="skill">
+                <div class="skill" onclick="showPopup('SQL', 'More information about SQL.')">
                     <i class="fas fa-database"></i>
                     <span>SQL</span>
                 </div>
-                <div class="skill">
+                <div class="skill" onclick="showPopup('Excel', 'More information about Excel.')">
                     <i class="fas fa-table"></i>
                     <span>Excel</span>
                 </div>
-                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="certifications" class="fade-in glass-effect">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="skills-achievements">
+                <div class="skill" onclick="showPopup('Azure', 'Details about Azure certification.')">
+                    <i class="fab fa-microsoft"></i>
+                    <span>Azure</span>
+                </div>
+                <div class="skill" onclick="showPopup('Google Analytics', 'Details about Google Analytics certification.')">
+                    <i class="fab fa-google"></i>
+                    <span>Google Analytics</span>
+                </div>
+                <div class="skill" onclick="showPopup('Google Project Management', 'Details about Google Project Management certification.')">
+                    <i class="fab fa-google"></i>
+                    <span>Google Project Management</span>
+                </div>
+                <div class="skill" onclick="showPopup('SQL', 'Details about SQL certification.')">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
             </div>
         </div>
     </section>
@@ -89,23 +113,22 @@
         <div class="container">
             <h2>Achievements</h2>
             <div class="skills-achievements">
-                <div class="achievement">
+                <div class="achievement" onclick="showPopup('Dean\'s List', 'Details about Dean\'s List achievement.')">
                     <i class="fas fa-trophy"></i>
                     <span>Dean's List</span>
                 </div>
-                <div class="achievement">
+                <div class="achievement" onclick="showPopup('Certified Data Analyst', 'Details about Certified Data Analyst achievement.')">
                     <i class="fas fa-certificate"></i>
                     <span>Certified Data Analyst</span>
                 </div>
-                <div class="achievement">
+                <div class="achievement" onclick="showPopup('Badminton Champion', 'Details about Badminton Champion achievement.')">
                     <i class="fas fa-medal"></i>
                     <span>Badminton Champion</span>
                 </div>
-                <div class="achievement">
+                <div class="achievement" onclick="showPopup('Project Excellence Award', 'Details about Project Excellence Award achievement.')">
                     <i class="fas fa-award"></i>
                     <span>Project Excellence Award</span>
                 </div>
-                <!-- Add more achievements as needed -->
             </div>
         </div>
     </section>
@@ -115,22 +138,8 @@
             <h2>Contact</h2>
             <div class="contact-info">
                 <p><strong>Email:</strong> nikhil3164095@gmail.com</p>
-                <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-                <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/nikhilpatil</a></p>
-                <p><strong>GitHub:</strong> <a href="#">github.com/nikhilpatil</a></p>
+                <p><strong>Phone:</strong> +91-883031224</p>
             </div>
-            <form id="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit" class="animated-btn">Send Message</button>
-            </form>
         </div>
     </section>
     
@@ -145,6 +154,14 @@
         </div>
     </footer>
     
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
