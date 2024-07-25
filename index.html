@@ -17,87 +17,109 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#ai-tools">AI Tools</a></li>
-                <li><a href="#" id="theme-toggle"><i class="fas fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
     
     <section id="home">
         <h1>Welcome to Nikhil Patil's Portfolio</h1>
-        <p>Explore my interactive projects and achievements.</p>
-        <a href="#about" class="btn">Learn More</a>
+        <p>Discover my projects, skills, and achievements.</p>
+        <a href="#about" class="btn animated-btn">Learn More</a>
     </section>
     
-    <section id="about" class="glass-effect fade-in">
+    <section id="about" class="fade-in glass-effect">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I’m Nikhil Patil, an IT professional with a passion for technology and sports. I graduated with distinction from MIT College of Engineering, Pune, and bring my teamwork and problem-solving skills to every project I undertake.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <p>Hello! I'm Nikhil Patil, a passionate IT professional with a knack for solving complex problems. I graduated from MIT College of Engineering, Pune, with a distinction in Information Technology and have a strong background in both coding and sports. My involvement in badminton taught me teamwork and perseverance, skills that I bring to every project I tackle.</p>
+            <a href="#contact" class="btn animated-btn">Get in Touch</a>
         </div>
     </section>
     
-    <section id="projects">
+    <section id="projects" class="fade-in glass-effect">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project fade-in">
-                <h3>AI-Based Predictive Model</h3>
-                <p>Developed a machine learning model to forecast sales trends. Interact with a live demo below.</p>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project. Explain what the project is about, the technologies used, and the impact or results achieved.</p>
                 <button class="btn" onclick="showPredictiveModel()">View Demo</button>
             </div>
-            <div class="project fade-in">
-                <h3>Interactive Data Dashboard</h3>
-                <p>Real-time data visualization dashboard built with D3.js. Explore sample data interactively.</p>
-                <button class="btn" onclick="showDashboard()">View Dashboard</button>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project. Explain what the project is about, the technologies used, and the impact or results achieved.</p>
+                <button class="btn" onclick="showDashboard()">View Demo</button>
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
     
-    <section id="skills" class="glass-effect fade-in">
+    <section id="skills" class="fade-in glass-effect">
         <div class="container">
             <h2>Skills</h2>
-            <ul class="list-hover">
-                <li>Python</li>
-                <li>Data Visualization</li>
-                <li>Project Management</li>
-                <li>SQL</li>
-                <li>Excel</li>
-            </ul>
+            <div class="skills-achievements">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <span>Data Analysis</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Project Management</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-table"></i>
+                    <span>Excel</span>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
         </div>
     </section>
     
-    <section id="achievements" class="fade-in">
+    <section id="achievements" class="fade-in glass-effect">
         <div class="container">
             <h2>Achievements</h2>
-            <ul class="list-hover">
-                <li>Dean's List</li>
-                <li>Certified Data Analyst</li>
-                <li>Badminton Champion</li>
-                <li>Project Excellence Award</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="ai-tools" class="glass-effect fade-in">
-        <div class="container">
-            <h2>AI Tools & Demos</h2>
-            <div id="chatbot">
-                <h3>AI Chatbot</h3>
-                <p>Ask me anything about my projects or skills.</p>
-                <!-- Embed a chatbot widget here -->
-            </div>
-            <div id="predictive-model">
-                <h3>Predictive Analytics Demo</h3>
-                <p>Interact with a demo of predictive analytics models.</p>
-                <!-- Embed predictive analytics demo here -->
+            <div class="skills-achievements">
+                <div class="achievement">
+                    <i class="fas fa-trophy"></i>
+                    <span>Dean's List</span>
+                </div>
+                <div class="achievement">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certified Data Analyst</span>
+                </div>
+                <div class="achievement">
+                    <i class="fas fa-medal"></i>
+                    <span>Badminton Champion</span>
+                </div>
+                <div class="achievement">
+                    <i class="fas fa-award"></i>
+                    <span>Project Excellence Award</span>
+                </div>
+                <!-- Add more achievements as needed -->
             </div>
         </div>
     </section>
     
-    <section id="contact" class="fade-in">
+    <section id="contact" class="fade-in glass-effect">
         <div class="container">
             <h2>Contact</h2>
-            <form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> nikhil3164095@gmail.com</p>
+                <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+                <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/nikhilpatil</a></p>
+                <p><strong>GitHub:</strong> <a href="#">github.com/nikhilpatil</a></p>
+            </div>
+            <form id="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -107,7 +129,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="animated-btn">Send Message</button>
             </form>
         </div>
     </section>
