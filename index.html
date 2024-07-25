@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Patil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#ai-tools">AI Tools</a></li>
+                <li><a href="#" id="theme-toggle"><i class="fas fa-moon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to Nikhil Patil's Portfolio</h1>
+        <p>Explore my interactive projects and achievements.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
+    
+    <section id="about" class="glass-effect fade-in">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m Nikhil Patil, an IT professional with a passion for technology and sports. I graduated with distinction from MIT College of Engineering, Pune, and bring my teamwork and problem-solving skills to every project I undertake.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project fade-in">
+                <h3>AI-Based Predictive Model</h3>
+                <p>Developed a machine learning model to forecast sales trends. Interact with a live demo below.</p>
+                <button class="btn" onclick="showPredictiveModel()">View Demo</button>
+            </div>
+            <div class="project fade-in">
+                <h3>Interactive Data Dashboard</h3>
+                <p>Real-time data visualization dashboard built with D3.js. Explore sample data interactively.</p>
+                <button class="btn" onclick="showDashboard()">View Dashboard</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="glass-effect fade-in">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="list-hover">
+                <li>Python</li>
+                <li>Data Visualization</li>
+                <li>Project Management</li>
+                <li>SQL</li>
+                <li>Excel</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="achievements" class="fade-in">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul class="list-hover">
+                <li>Dean's List</li>
+                <li>Certified Data Analyst</li>
+                <li>Badminton Champion</li>
+                <li>Project Excellence Award</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="ai-tools" class="glass-effect fade-in">
+        <div class="container">
+            <h2>AI Tools & Demos</h2>
+            <div id="chatbot">
+                <h3>AI Chatbot</h3>
+                <p>Ask me anything about my projects or skills.</p>
+                <!-- Embed a chatbot widget here -->
+            </div>
+            <div id="predictive-model">
+                <h3>Predictive Analytics Demo</h3>
+                <p>Interact with a demo of predictive analytics models.</p>
+                <!-- Embed predictive analytics demo here -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nikhil Patil. All rights reserved.</p>
+            <div class="social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
